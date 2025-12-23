@@ -5,9 +5,11 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import LightPillar from "./components/LightPillar"
 import Footer from "./components/Footer"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export default function App() {
   return (
     <>
+      <SpeedInsights />
       <Navbar />
       <main>
         <div className="w-full h-full fixed top-0 left-0 -z-50">
