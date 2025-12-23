@@ -6,7 +6,7 @@ export default function About() {
     return (
 
         <Section id="about">
-            <div className="flex flex-col items-center justify-center w-full h-full">
+            <div className="flex flex-col items-center justify-center w-full h-full px-6 py-20">
                 <h2 className="text-3xl md:text-4xl font-semibold tracking-wide uppercase mb-8 md:mb-12">
                     {aboutData.title}
                 </h2>

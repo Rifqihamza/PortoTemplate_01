@@ -5,7 +5,7 @@ export default function Contact() {
     return (
 
         <Section id="contact">
-            <div className="w-full flex flex-col items-center gap-4 px-4 text-center">
+            <div className="w-full flex flex-col items-center gap-4 px-6 py-20 text-center">
                 <h2 className="text-3xl font-semibold tracking-tight mb-2">
                     {contactData.title}
                 </h2>
