@@ -3,28 +3,19 @@ import Home from "./pages/Home"
 import Projects from "./pages/Project"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import LightPillar from "./components/LightPillar"
 import Footer from "./components/Footer"
+import Background from "./components/Background"
+
 export default function App() {
+  const showBackground = true // bisa nanti dikondisikan
+
   return (
     <>
       <Navbar />
+
+      {showBackground && <Background />}
+
       <main>
-        <div className="w-full h-full fixed top-0 left-0 -z-50">
-          <LightPillar
-            topColor="#5227FF"
-            bottomColor="#FF9FFC"
-            intensity={0.4}
-            rotationSpeed={0.3}
-            glowAmount={0.005}
-            pillarWidth={3.0}
-            pillarHeight={0.4}
-            noiseIntensity={1}
-            pillarRotation={45}
-            interactive={false}
-            mixBlendMode="normal"
-          />
-        </div>
         <Home />
         <div className="w-full max-w-7xl mx-auto">
           <About />
@@ -32,6 +23,7 @@ export default function App() {
           <Contact />
         </div>
       </main>
+
       <Footer />
     </>
   )
